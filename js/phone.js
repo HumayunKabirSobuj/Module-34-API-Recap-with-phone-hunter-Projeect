@@ -93,7 +93,17 @@ const showPhoneDetails = (phone) => {
             <img src="${phone.image}" alt="">
 
     </div>
-    <p><span>Storage: </span> ${phone?.mainFeatures?.storage}</p>
+    <div class="space-y-2">
+        <p><span>Storage: </span> ${phone?.mainFeatures?.storage}</p>
+        <p><span>Display Size: </span> ${phone?.mainFeatures?.displaySize}</p>
+        <p><span>chipSet: </span> ${phone?.mainFeatures?.chipSet}</p>
+        <p><span>memory: </span> ${phone?.mainFeatures?.memory}</p>
+        <p><span>slug: </span> ${phone?.slug || "Slug is not availlable"}</p>
+        <p><span>releaseDate: </span> ${phone?.releaseDate|| "releaseDate is not availlable"}</p>
+        <p><span>Brand: </span> ${phone?.brand}</p>
+        <p><span>GPS: </span> ${phone?.others?.GPS || "No GPS availlable"}</p>
+
+    </div>
     
     `
     //show the modal
